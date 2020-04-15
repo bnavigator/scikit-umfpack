@@ -1,0 +1,108 @@
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title>scikits.umfpack.umfpack.UmfpackContext.linsolve &#8212; scikits.umfpack 0.3.2 documentation</title>
+    <link rel="stylesheet" href="../_static/nature.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/language_data.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="scikits.umfpack.umfpack.UmfpackContext.lu" href="scikits.umfpack.umfpack.UmfpackContext.lu.html" />
+    <link rel="prev" title="scikits.umfpack.umfpack.UmfpackContext.solve" href="scikits.umfpack.umfpack.UmfpackContext.solve.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="scikits.umfpack.umfpack.UmfpackContext.lu.html" title="scikits.umfpack.umfpack.UmfpackContext.lu"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="scikits.umfpack.umfpack.UmfpackContext.solve.html" title="scikits.umfpack.umfpack.UmfpackContext.solve"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">scikits.umfpack 0.3.2 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../umfpack.html" >Low-level interface to UMFPACK</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="scikits.umfpack.umfpack.UmfpackContext.html" accesskey="U">scikits.umfpack.umfpack.UmfpackContext</a> &#187;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="scikits-umfpack-umfpack-umfpackcontext-linsolve">
+<h1>scikits.umfpack.umfpack.UmfpackContext.linsolve<a class="headerlink" href="#scikits-umfpack-umfpack-umfpackcontext-linsolve" title="Permalink to this headline">¶</a></h1>
+<dl class="method">
+<dt id="scikits.umfpack.umfpack.UmfpackContext.linsolve">
+<code class="sig-prename descclassname">UmfpackContext.</code><code class="sig-name descname">linsolve</code><span class="sig-paren">(</span><em class="sig-param">self</em>, <em class="sig-param">sys</em>, <em class="sig-param">mtx</em>, <em class="sig-param">rhs</em>, <em class="sig-param">autoTranspose=False</em><span class="sig-paren">)</span><a class="headerlink" href="#scikits.umfpack.umfpack.UmfpackContext.linsolve" title="Permalink to this definition">¶</a></dt>
+<dd><p>One-shot solution of system of linear equation. Reuses Numeric object
+if possible.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>sys</strong><span class="classifier">constant</span></dt><dd><p>one of UMFPACK system description constants, like
+UMFPACK_A, UMFPACK_At, see umfSys list and UMFPACK docs</p>
+</dd>
+<dt><strong>mtx</strong><span class="classifier">scipy.sparse.csc_matrix or scipy.sparse.csr_matrix</span></dt><dd><p>Input.</p>
+</dd>
+<dt><strong>rhs</strong><span class="classifier">ndarray</span></dt><dd><p>Right Hand Side</p>
+</dd>
+<dt><strong>autoTranspose</strong><span class="classifier">bool</span></dt><dd><p>Automatically changes <cite>sys</cite> to the transposed type, if <cite>mtx</cite> is in CSR,
+since UMFPACK assumes CSC internally</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><dl class="simple">
+<dt><strong>sol</strong><span class="classifier">ndarray</span></dt><dd><p>Solution to the equation system.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+
+
+          </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="scikits.umfpack.umfpack.UmfpackContext.lu.html" title="scikits.umfpack.umfpack.UmfpackContext.lu"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="scikits.umfpack.umfpack.UmfpackContext.solve.html" title="scikits.umfpack.umfpack.UmfpackContext.solve"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">scikits.umfpack 0.3.2 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../umfpack.html" >Low-level interface to UMFPACK</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="scikits.umfpack.umfpack.UmfpackContext.html" >scikits.umfpack.umfpack.UmfpackContext</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2017, scikit-umfack developers.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 2.4.4.
+    </div>
+  </body>
+</html>

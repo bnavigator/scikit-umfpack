@@ -1,0 +1,103 @@
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title>Development &#8212; scikits.umfpack 0.3.2 documentation</title>
+    <link rel="stylesheet" href="_static/nature.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/language_data.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Release Tasks" href="release.html" />
+    <link rel="prev" title="scikits.umfpack.umfpack.UmfpackContext.report_info" href="reference/scikits.umfpack.umfpack.UmfpackContext.report_info.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="release.html" title="Release Tasks"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="reference/scikits.umfpack.umfpack.UmfpackContext.report_info.html" title="scikits.umfpack.umfpack.UmfpackContext.report_info"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">scikits.umfpack 0.3.2 documentation</a> &#187;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="development">
+<h1>Development<a class="headerlink" href="#development" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="code">
+<h2>Code<a class="headerlink" href="#code" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal notranslate"><span class="pre">scikits.umfpack</span></code> development is done on Github at
+<a class="reference external" href="https://github.com/scikit-umfpack/scikit-umfpack">https://github.com/scikit-umfpack/scikit-umfpack</a></p>
+<p>You can check the latest sources with the command:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">clone</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">github</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">scikit</span><span class="o">-</span><span class="n">umfpack</span><span class="o">/</span><span class="n">scikit</span><span class="o">-</span><span class="n">umfpack</span><span class="o">.</span><span class="n">git</span>
+</pre></div>
+</div>
+<p>or if you have write privileges:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">clone</span> <span class="n">git</span><span class="nd">@github</span><span class="o">.</span><span class="n">com</span><span class="p">:</span><span class="n">scikit</span><span class="o">-</span><span class="n">umfpack</span><span class="o">/</span><span class="n">scikit</span><span class="o">-</span><span class="n">umfpack</span><span class="o">.</span><span class="n">git</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="testing">
+<h2>Testing<a class="headerlink" href="#testing" title="Permalink to this headline">¶</a></h2>
+<p>After installation, you can launch the test suite from outside the
+source directory (you will need to have the <code class="docutils literal notranslate"><span class="pre">nose</span></code> package installed):</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">nosetests</span> <span class="o">-</span><span class="n">v</span> <span class="n">scikits</span><span class="o">.</span><span class="n">umfpack</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="building-documentation">
+<h2>Building documentation<a class="headerlink" href="#building-documentation" title="Permalink to this headline">¶</a></h2>
+<p>To build the documentation, do:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">python</span> <span class="n">setup</span><span class="o">.</span><span class="n">py</span> <span class="n">build_ext</span> <span class="o">-</span><span class="n">i</span> <span class="n">build_sphinx</span>
+</pre></div>
+</div>
+</div>
+</div>
+
+
+          </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="release.html" title="Release Tasks"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="reference/scikits.umfpack.umfpack.UmfpackContext.report_info.html" title="scikits.umfpack.umfpack.UmfpackContext.report_info"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">scikits.umfpack 0.3.2 documentation</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2017, scikit-umfack developers.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 2.4.4.
+    </div>
+  </body>
+</html>

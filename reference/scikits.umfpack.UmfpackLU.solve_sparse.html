@@ -1,0 +1,100 @@
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title>scikits.umfpack.UmfpackLU.solve_sparse &#8212; scikits.umfpack 0.3.2 documentation</title>
+    <link rel="stylesheet" href="../_static/nature.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/language_data.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Low-level interface to UMFPACK" href="../umfpack.html" />
+    <link rel="prev" title="scikits.umfpack.UmfpackLU.solve" href="scikits.umfpack.UmfpackLU.solve.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="../umfpack.html" title="Low-level interface to UMFPACK"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="scikits.umfpack.UmfpackLU.solve.html" title="scikits.umfpack.UmfpackLU.solve"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">scikits.umfpack 0.3.2 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../interface.html" >Easy-to-use UMFPACK interface</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="scikits.umfpack.UmfpackLU.html" accesskey="U">scikits.umfpack.UmfpackLU</a> &#187;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="scikits-umfpack-umfpacklu-solve-sparse">
+<h1>scikits.umfpack.UmfpackLU.solve_sparse<a class="headerlink" href="#scikits-umfpack-umfpacklu-solve-sparse" title="Permalink to this headline">¶</a></h1>
+<dl class="method">
+<dt id="scikits.umfpack.UmfpackLU.solve_sparse">
+<code class="sig-prename descclassname">UmfpackLU.</code><code class="sig-name descname">solve_sparse</code><span class="sig-paren">(</span><em class="sig-param">self</em>, <em class="sig-param">B</em><span class="sig-paren">)</span><a class="headerlink" href="#scikits.umfpack.UmfpackLU.solve_sparse" title="Permalink to this definition">¶</a></dt>
+<dd><p>Solve linear equation of the form A X = B. Where B and X are sparse matrices.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>B</strong><span class="classifier">any scipy.sparse matrix</span></dt><dd><p>Right-hand side of the matrix equation.
+Note: it will be converted to csc_matrix via <cite>.tocsc()</cite>.</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><dl class="simple">
+<dt><strong>X</strong><span class="classifier">csc_matrix</span></dt><dd><p>Solution to the matrix equation as a csc_matrix</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+
+
+          </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="../umfpack.html" title="Low-level interface to UMFPACK"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="scikits.umfpack.UmfpackLU.solve.html" title="scikits.umfpack.UmfpackLU.solve"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">scikits.umfpack 0.3.2 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../interface.html" >Easy-to-use UMFPACK interface</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="scikits.umfpack.UmfpackLU.html" >scikits.umfpack.UmfpackLU</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2017, scikit-umfack developers.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 2.4.4.
+    </div>
+  </body>
+</html>

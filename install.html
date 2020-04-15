@@ -1,0 +1,108 @@
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title>Installation &#8212; scikits.umfpack 0.3.2 documentation</title>
+    <link rel="stylesheet" href="_static/nature.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/language_data.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Easy-to-use UMFPACK interface" href="interface.html" />
+    <link rel="prev" title="scikit-umfpack" href="index.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="interface.html" title="Easy-to-use UMFPACK interface"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="index.html" title="scikit-umfpack"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">scikits.umfpack 0.3.2 documentation</a> &#187;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="installation">
+<h1>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h1>
+<p>Releases of scikit-umfpack can be installed using <code class="docutils literal notranslate"><span class="pre">pip</span></code>. For a system-wide
+installation run:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">pip</span> <span class="n">install</span> <span class="o">--</span><span class="n">upgrade</span> <span class="n">scikit</span><span class="o">-</span><span class="n">umfpack</span>
+</pre></div>
+</div>
+<p>or for a user installation run</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">pip</span> <span class="n">install</span> <span class="o">--</span><span class="n">upgrade</span> <span class="o">--</span><span class="n">user</span> <span class="n">scikit</span><span class="o">-</span><span class="n">umfpack</span>
+</pre></div>
+</div>
+<p>To install scikit-umfpack from its source code directory, run in that
+directory (<code class="docutils literal notranslate"><span class="pre">--user</span></code> means a user installation):</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">pip</span> <span class="n">install</span> <span class="o">--</span><span class="n">upgrade</span> <span class="o">--</span><span class="n">user</span> <span class="o">.</span>
+</pre></div>
+</div>
+<p>When building from the sources, creating a <code class="docutils literal notranslate"><span class="pre">site.cfg</span></code> file with the
+<cite>[umfpack]</cite> section describing location of umfpack header files and libraries
+might be necessary. This file can be created next to the package’s
+<code class="docutils literal notranslate"><span class="pre">setup.py</span></code>.</p>
+<p>Example site.cfg entry for UMFPACK v5.0 (as part of UFsparse package) in
+&lt;dir&gt;:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">[</span><span class="n">amd</span><span class="p">]</span>
+<span class="n">library_dirs</span> <span class="o">=</span> <span class="o">&lt;</span><span class="nb">dir</span><span class="o">&gt;/</span><span class="n">UFsparse</span><span class="o">/</span><span class="n">AMD</span><span class="o">/</span><span class="n">Lib</span>
+<span class="n">include_dirs</span> <span class="o">=</span> <span class="o">&lt;</span><span class="nb">dir</span><span class="o">&gt;/</span><span class="n">UFsparse</span><span class="o">/</span><span class="n">AMD</span><span class="o">/</span><span class="n">Include</span><span class="p">,</span> <span class="o">&lt;</span><span class="nb">dir</span><span class="o">&gt;/</span><span class="n">UFsparse</span><span class="o">/</span><span class="n">UFconfig</span>
+<span class="n">amd_libs</span> <span class="o">=</span> <span class="n">amd</span>
+
+<span class="p">[</span><span class="n">umfpack</span><span class="p">]</span>
+<span class="n">library_dirs</span> <span class="o">=</span> <span class="o">&lt;</span><span class="nb">dir</span><span class="o">&gt;/</span><span class="n">UFsparse</span><span class="o">/</span><span class="n">UMFPACK</span><span class="o">/</span><span class="n">Lib</span>
+<span class="n">include_dirs</span> <span class="o">=</span> <span class="o">&lt;</span><span class="nb">dir</span><span class="o">&gt;/</span><span class="n">UFsparse</span><span class="o">/</span><span class="n">UMFPACK</span><span class="o">/</span><span class="n">Include</span><span class="p">,</span> <span class="o">&lt;</span><span class="nb">dir</span><span class="o">&gt;/</span><span class="n">UFsparse</span><span class="o">/</span><span class="n">UFconfig</span>
+<span class="n">umfpack_libs</span> <span class="o">=</span> <span class="n">umfpack</span>
+</pre></div>
+</div>
+<p>Later versions of umfpack live in the Suitesparse package - then the <code class="docutils literal notranslate"><span class="pre">[amd]</span></code>
+section is not necessary.</p>
+</div>
+
+
+          </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="interface.html" title="Easy-to-use UMFPACK interface"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="index.html" title="scikit-umfpack"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">scikits.umfpack 0.3.2 documentation</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2017, scikit-umfack developers.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 2.4.4.
+    </div>
+  </body>
+</html>

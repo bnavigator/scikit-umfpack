@@ -1,0 +1,6 @@
+scikits.umfpack.splu
+====================
+
+.. currentmodule:: scikits.umfpack
+
+.. autofunction:: splu

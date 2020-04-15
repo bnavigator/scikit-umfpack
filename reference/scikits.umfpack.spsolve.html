@@ -1,0 +1,101 @@
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title>scikits.umfpack.spsolve &#8212; scikits.umfpack 0.3.2 documentation</title>
+    <link rel="stylesheet" href="../_static/nature.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/language_data.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="scikits.umfpack.splu" href="scikits.umfpack.splu.html" />
+    <link rel="prev" title="Easy-to-use UMFPACK interface" href="../interface.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="scikits.umfpack.splu.html" title="scikits.umfpack.splu"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="../interface.html" title="Easy-to-use UMFPACK interface"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">scikits.umfpack 0.3.2 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../interface.html" accesskey="U">Easy-to-use UMFPACK interface</a> &#187;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="scikits-umfpack-spsolve">
+<h1>scikits.umfpack.spsolve<a class="headerlink" href="#scikits-umfpack-spsolve" title="Permalink to this headline">¶</a></h1>
+<dl class="function">
+<dt id="scikits.umfpack.spsolve">
+<code class="sig-prename descclassname">scikits.umfpack.</code><code class="sig-name descname">spsolve</code><span class="sig-paren">(</span><em class="sig-param">A</em>, <em class="sig-param">b</em><span class="sig-paren">)</span><a class="headerlink" href="#scikits.umfpack.spsolve" title="Permalink to this definition">¶</a></dt>
+<dd><p>Solve the sparse linear system Ax=b, where b may be a vector or a matrix.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>A</strong><span class="classifier">ndarray or sparse matrix</span></dt><dd><p>The square matrix A will be converted into CSC or CSR form</p>
+</dd>
+<dt><strong>b</strong><span class="classifier">ndarray or sparse matrix</span></dt><dd><p>The matrix or vector representing the right hand side of the equation.</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><dl class="simple">
+<dt><strong>x</strong><span class="classifier">ndarray or sparse matrix</span></dt><dd><p>the solution of the sparse linear equation.
+If b is a vector, then x is a vector of size A.shape[0]
+If b is a matrix, then x is a matrix of size (A.shape[0],)+b.shape[1:]</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+
+
+          </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="scikits.umfpack.splu.html" title="scikits.umfpack.splu"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="../interface.html" title="Easy-to-use UMFPACK interface"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">scikits.umfpack 0.3.2 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../interface.html" >Easy-to-use UMFPACK interface</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2017, scikit-umfack developers.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 2.4.4.
+    </div>
+  </body>
+</html>
